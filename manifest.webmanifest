@@ -1,0 +1,9 @@
+{
+  "name": "MYCO Field Lab — Mushroom Trial",
+  "short_name": "MYCO Farm",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f7f3",
+  "theme_color": "#153a2d",
+  "description": "Private synced monitoring for a 12-bag mushroom farm trial"
+}

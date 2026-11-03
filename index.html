@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#153a2d">
+  <meta name="description" content="Private cloud-synced 12-bag milky and oyster mushroom experiment tracker for your covered terrace.">
+  <title>MYCO · Mushroom Trial Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="ico-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="ico-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="ico-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1"/><circle cx="19" cy="20" r="1"/><path d="M2 3h2l3 13h13l2-9H5"/></symbol>
+    <symbol id="ico-tools" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="ico-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+    <symbol id="ico-sprout" viewBox="0 0 24 24"><path d="M12 22v-9M12 15c-6 0-9-3-9-9 6 0 9 3 9 9ZM12 12c0-6 3-9 9-9 0 6-3 9-9 9Z"/></symbol>
+    <symbol id="ico-camera" viewBox="0 0 24 24"><path d="M4 7h4l2-3h4l2 3h4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="ico-alert" viewBox="0 0 24 24"><path d="m12 3 10 18H2L12 3Z"/><path d="M12 9v5M12 18h.01"/></symbol>
+    <symbol id="ico-report" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+    <symbol id="ico-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M4.9 4.9 7 7m10 10 2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></symbol>
+    <symbol id="ico-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="ico-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="ico-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+    <symbol id="ico-trash" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2m3 0-1 15H6L5 6M10 10v7m4-7v7"/></symbol>
+    <symbol id="ico-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+  </svg>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"><span class="brand-spore"></span></div><div><strong>MYCO<span class="brand-dot">.</span></strong><small>FIELD LAB / 01</small></div></div>
+      <div class="side-context"><span class="live-dot"></span> FIELD JOURNAL · CLOUD READY <div class="side-context-title">12-bag terrace trial</div><div class="side-context-meta">6 milky <span>·</span> 6 oyster</div></div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <button class="nav-link active" data-page="overview"><svg><use href="#ico-grid"/></svg>Overview</button>
+        <button class="nav-link" data-page="purchases"><svg><use href="#ico-cart"/></svg>Purchasing</button>
+        <button class="nav-link" data-page="setup"><svg><use href="#ico-tools"/></svg>Setup checklist</button>
+        <button class="nav-link" data-page="daily"><svg><use href="#ico-calendar"/></svg>Daily monitoring</button>
+        <button class="nav-link" data-page="bags"><svg><use href="#ico-sprout"/></svg>Bag tracker</button>
+        <button class="nav-link" data-page="photos"><svg><use href="#ico-camera"/></svg>Photo journal</button>
+        <button class="nav-link" data-page="incidents"><svg><use href="#ico-alert"/></svg>Abnormality log <span class="nav-count" id="nav-open-incidents" hidden>0</span></button>
+        <button class="nav-link" data-page="cloud"><svg><use href="#ico-settings"/></svg>Cloud sync <span class="cloud-nav-mark">NEW</span></button>
+        <button class="nav-link" data-page="reports"><svg><use href="#ico-report"/></svg>Reports & backup</button>
+      </nav>
+      <div class="side-foot"><button class="nav-link" data-page="settings"><svg><use href="#ico-settings"/></svg>Trial settings</button><div class="storage-note">Cloud sync is available.<br><b>Export backups regularly.</b></div></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar"><div class="topbar-breadcrumb"><span>MYCO FIELD LAB</span><span class="slash">/</span><strong id="breadcrumb-current">Overview</strong></div><div class="topbar-right"><div class="saving-pill"><span class="save-dot"></span><span id="save-status">Stored on this device</span></div><button class="tiny-btn" id="top-backup" title="Download complete backup"><svg><use href="#ico-download"/></svg> Backup</button></div></header>
+      <main id="page" tabindex="-1"></main>
+      <footer class="app-footer"><span>MYCO / FIELD LAB</span><span>Private cloud sync · Local backup · GitHub Pages</span></footer>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="photo-modal" class="photo-modal"><button class="photo-close" id="close-photo" aria-label="Close photo">×</button><img id="photo-large" alt="Farm progress photo"><div id="photo-detail"></div></dialog>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="config.js" defer></script>
+  <script src="cloud.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
